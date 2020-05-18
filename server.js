@@ -27,7 +27,7 @@ router.use("/issue", require("./routes/issue"));
 // Register the 'root' router
 app.use("/api", router);
 
-const port = process.env.PORT || 12080;
+const port = process.env.PORT || 3000;
 const httpServer = app.listen(port, () => {
   console.log("Server is up and running on port:", port);
 });
