@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '12'
+install: npm install
+branches:
+  only:
+  - master
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  app: ngility-backend
+  skip_cleanup: true
+  keep-history: true
+  api_key:
+    secure: gN+JnobiWolJLADtikW/DApN73NM7iGjPGMRtjh02Mka1G53vGe2Xea2a39o/CNTZC07zNC8+b1zsEdDx8z26/aH3tbFNftQg1ml9E6FejHT8FOeSe61uRKLytEXRldoxTEVM4nj6WgbCwZLvc787eLrDceSUU0x6tAcUdyt4Lfv96iLJSc0OGCRKlrYany/yl9+LvOWoXWopgUMcUP/gW5viLePRP7F8nUbR4exVe92gJcOKsBd6K2XFL6bQ2F5CnQhtuwJldK2B+s4xSupp9M145O38CquDM2Rv8V1/KP/wBeXobSkz4X0KWfDWrSX+EawHEriD5JPbAV1lvPBdMB1h8Gx2fFYRWTcGPmZtAEZaZrzZByt9ma2TykQturuq3CkByob+0m40S1k2E+wiE30DaQPthNAhcgh9L0hd0H3LzNDUtZlzi1dbSRTlMGt8GdLwj+sYH9zgsbZQshpf35Ki0G3TaBl2wSN/Kf0n7njnZSBPVcR2Euqu4KPUHETuP2cJ8+JfSO60vixwDquAQVx6PUuBw6Xls6WUvbCl3yvspMvWp80ua1CJ6OKoDcA5kd4jVJYySd/mkWP1K2WJxXlOeb33Iv/uAWsPMQAGsw4a3Kh/uRrE86YIH2K4yo8wbBEKjojO9mLwVl15y4+kUXueXJEFBiLiTY9CjMnS6o=
